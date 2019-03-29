@@ -1,0 +1,2 @@
+curl -X POST "http://192.168.99.100:8080/algorithm/NaiveBayes" -H "accept: text/uri-list" -H "Content-Type: multipart/form-data" -F "datasetUri=" -F "batchSize=100" -F "useKernelEstimator=0" -F "useSupervisedDiscretization=0" -F "validation=CrossValidation" -F "validationNum=10" -F "file=@weather.arff"
+exit
